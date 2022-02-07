@@ -82,3 +82,18 @@ sorted(songs, key=lambda song: song["playcount"])
 # [{'title': 'happy', 'playcount': 1},
 {'title': 'hello', 'playcount': 23},
 {'title': 'baby', 'playcount': 33}]
+```
+
+## Sortowanie odwrócone  
+Jako argument w funkcji sorted() można podać również "reverse=True", wtedy zostanie zwrócony dany zbiór posortowany w kolejności:  
+- alfabetycznej  
+- od najmniejszego do największego  
+- wg podanego klucza,  
+ale w odwrotnej kolejności.  
+```
+damian = ["D", "B", "C", "A"]
+
+print(sorted(damian, reverse=True))
+
+# ["D", "C", "B", "A"]
+```
