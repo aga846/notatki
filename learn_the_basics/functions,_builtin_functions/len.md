@@ -6,7 +6,7 @@ Funkcja len() zwraca długość podanego elementu, np.
 
 ## Przykład
 ```
-l = [1, 2, "hey", hello, 3.24, True]
+l = [1, 2, "hey", "hello", 3.24, True]
 print(len(l))   # 6
 
 s = "hello"
