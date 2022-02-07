@@ -14,6 +14,9 @@ damian = {"name": "Damian", "name": "Aga", "name": "Kasia",
           "age": "26", "last_name": "Jaskolski", "pet": "no"}
 print(sorted(damian))   # ['age', 'last_name', 'name', 'pet']
 ```
+^  
+zwrócił tylko klucze, posortowane alfabetycznie.  
+
 ### sorted() z listą:
 ```
 aga = ["Aga", "Jask", "Czesc"]
@@ -23,9 +26,9 @@ numbers = [5, 2, 6, 7, 3]
 print(sorted(numbers))   # [2, 3, 5, 6, 7]
 ```
 
-
-## Ważne!  
-Najpierw idą wielkie litery, tj. w powyższym przykładzie z listą - gdyby "czesc" było napisane z małej litery, lista pozostałaby niezmieniona.  
+Ważne!  
+Najpierw idą wielkie litery, tj. w powyższym przykładzie z listą - gdyby "czesc" było napisane z małej litery, lista pozostałaby niezmieniona.   
+ 
 
 # Sortowanie z podaniem klucza  
 Przy sortowaniu można podać, wg jakiego klucza elementy mają być posortowane:  
@@ -43,19 +46,29 @@ users = [
 sorted(users, key=len)   # [{'username': 'Kasia'}, {'username': 'Damian', 'tweets': ['Hello']},
 {'username': 'Aga', 'age': 26, 'pet': 'no'}]
 ```
+^  
+zwrócił elementy listy w kolejności od elementu zawierającego najmniej elementów.  
+
+
 Kluczem może być również funkcja lambda:  
 ```
-sorted(users, key=lambda user: user["username"])   # [{'username': 'Aga', 'age': 26, 'pet': 'no'}, {'username': 'Damian', 'tweets': ['Hello']}, {'username': 'Kasia'}]
+sorted(users, key=lambda user: user["username"]) 
+# [{'username': 'Aga', 'age': 26, 'pet': 'no'},
+{'username': 'Damian', 'tweets': ['Hello']}, {'username': 'Kasia'}]
 ```
 w powyższym przykładzie kluczem jest funkcja lambda zastosowana dla każdego elementu w słowniku users. Oznacza to, że słownik zostanie posortowany wg "username", tj. elementy będą sortowane alfabetycznie wg wartości podanych w kluczu "username".  
   
-  
+    
 Kluczem może być także długość elementów:  
 ```
-sorted(users, key=lambda user: len(user["username"]))   # [{'username': 'Aga', 'age': 26, 'pet': 'no'}, {'username': 'Kasia'},
-
+sorted(users, key=lambda user: len(user["username"]))
+# [{'username': 'Aga', 'age': 26, 'pet': 'no'},
+{'username': 'Kasia'},
 {'username': 'Damian', 'tweets': ['Hello']}]
 ```  
+^
+zwrócił elementy listy w kolejności wg długości wartości pod kluczem "username".  
+  
   
 albo wielkość liczby:  
 ```
@@ -66,4 +79,6 @@ songs = [
 ]
 
 sorted(songs, key=lambda song: song["playcount"])
-# [{'title': 'happy', 'playcount': 1}, {'title': 'hello', 'playcount': 23}, {'title': 'baby', 'playcount': 33}]
+# [{'title': 'happy', 'playcount': 1},
+{'title': 'hello', 'playcount': 23},
+{'title': 'baby', 'playcount': 33}]
