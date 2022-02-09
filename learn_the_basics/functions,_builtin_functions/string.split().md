@@ -12,7 +12,7 @@ print(word1.split())
 print(word1.split(" "))
 # ['Cześć', 'jestem', 'Aga', 'i', 'bardzo', 'Cię', 'kocham']
 print(word2.split(", "))
-# ['Cześć,jestem Aga', 'bardzo Cię kocham']
+# ['Cześć", "jestem Aga', 'bardzo Cię kocham']
 print(word3.split("e"))
 # ['tr', 'och', ' so', 'bi', ' pro', 'buj', '']
 
