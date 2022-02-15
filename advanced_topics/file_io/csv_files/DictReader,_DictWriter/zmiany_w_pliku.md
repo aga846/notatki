@@ -26,10 +26,10 @@ W kolejnym "with open" otwieram nowy plik, w trybie do pisania - "w" (lub tworz�
 Przypisuję headers, podane w krotce.  
 Potem tworzę obiekt klasy DictWriter, który nazywam csv_writer. Jako jego atrybuty podaję plik oraz fieldnames - czyli wyżej utworzone headers.  
 Za pomocą funkcji writeheader() zastosowanej do obiektu csv_writer, tworzę rząd headers.  
-Dla każdego elementu w liście fighters (która jest krotką list zawierających krotki - czyli czymś w rodzaju listy słowników:
-  ([("Name": "Arthur"), ("Country": "USA"), ("Height_cm": 175)],
-   [("Name": "Jake"), ("Country": "Japan"), ("Height_cm": 175)]
-   )
-), robię nowy rząd w nowym pliku inches_fighters.csv i w argumentach do writerow podaję:
-header: value od key w fighters (dla każdego fightera - f) -> "Name": f["Name"],
+Dla każdego elementu w liście fighters (która jest krotką list zawierających krotki - czyli czymś w rodzaju listy słowników:  
+  ([("Name": "Arthur"), ("Country": "USA"), ("Height_cm": 175)],  
+   [("Name": "Jake"), ("Country": "Japan"), ("Height_cm": 175)]  
+   )  
+), robię nowy rząd w nowym pliku inches_fighters.csv i w argumentach do writerow podaję:  
+header: value od key w fighters (dla każdego fightera - f) -> "Name": f["Name"],  
 dodatkowo do wartości, którą chcę zmienić, stosuję funkcję cm_to_in.
