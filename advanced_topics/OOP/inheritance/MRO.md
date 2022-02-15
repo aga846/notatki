@@ -1,5 +1,5 @@
 # Czym jest MRO  
-MRO to skrót od "Method Resolution Order" i oznacza hierarchę klas przy mnogim dziedziczenu.  
+MRO to skrót od "Method Resolution Order" i oznacza hierarchię klas przy mnogim dziedziczenu.  
 
 ## Jak odwołać się do MRO?  
 
