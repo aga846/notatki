@@ -1,6 +1,6 @@
 # Wstawianie linka, który przekierowuje do innej strony  
-Używa się tagu <a> i </a>. Wszystko, co jest pomiędzy <a> i </a> jest częścią linka.  
-W tagu <a> pisze się atrybut href (HyperText Reference), gdzie wpisuje się adres URL.  
+Używa się tagu "a" i "/a". Wszystko, co jest pomiędzy "a" i "/a" jest częścią linka.  
+W tagu "a" pisze się atrybut href (HyperText Reference), gdzie wpisuje się adres URL.  
 Po nim można napisać również atrybut target, który wskazuje, gdzie nowa strona zostanie otwarta (nowe czy to samo okno).
 ```
 <a href = "http://www.google.com" target = "_self">Tutorials Point</a>
