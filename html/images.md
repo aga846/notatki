@@ -1,7 +1,7 @@
-<img> to tag, który się nie zamyka.  
+\<img\> to tag, który się nie zamyka.  
   
-<img> musi mieć atrybut (tak jak <a> musi mieć href). Nazywa się "source":  
-<img src = "">  
+\<img\> musi mieć atrybut (tak jak \<a\> musi mieć href). Nazywa się "source":  
+\<img src = ""\>  
   
 Można zmieniać rozmiar obrazka używając html, ale lepiej to robić za pomocą CSS.
   

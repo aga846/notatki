@@ -1,6 +1,6 @@
 Button to przycisk. Buttony tworzy się wewnątrz formularza - inaczej nie robią nic. Wszystkie notatki poniżej dotyczą buttonów wewnątrz formularza.  
   
-## <button> </button>  
+## \<button\> \</button\>  
 Tworzy button.    
 ```
 <button>Submit</button>

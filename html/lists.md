@@ -1,8 +1,8 @@
-## <li> </li>   
+## \<li\> \</li\>   
 List item. Dodawanie kolejnych elementów na liście.  
   
   
-## <ul> </ul>
+## \<ul\> \</ul\>
 Unordered list. Elementy na liście będą wyświetlone pod zwykłymi punktami (np. *, kropka, -. Dla wyboru punktu służy atrybut "type" - square, disc, circle). Nie są w żadnej specjalnej kolejności.  
 ```
 <ul type = "square">
@@ -13,7 +13,7 @@ Unordered list. Elementy na liście będą wyświetlone pod zwykłymi punktami (
 ```
   
   
-## <ol> </ol>  
+## \<ol\> \</ol\>  
 Ordered list. Elementy na liście będą wyświetlone pod numerami. Domyślnym numerem startowym jest 1. Można wybrać numerowanie:  
 - 1, 2, 3  
 - I, II, III  
@@ -29,11 +29,11 @@ Można też wybrać numer startowy poprzez użycie atrybutu "start". Przy atrybu
 </ol>
 ```
   
-## <dl> </dl>  
+## \<dl\> \</dl\>  
 Definition list. Wstawia się słowo oraz jego definicję. Używane tagi:  
-- <dl> i </dl> - zdefiniowanie początku i końca słownika  
-- <dt> i </dt> - wstawienie terminu  
-- <dd> i </dd> - wstawienie definicji  
+- \<dl\> i \</dl\> - zdefiniowanie początku i końca słownika  
+- \<dt\> i \</dt\> - wstawienie terminu  
+- \<dd\> i \</dd\> - wstawienie definicji  
 ```
 <dl>
   <dt><b>HTML</b></dt>

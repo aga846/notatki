@@ -1,8 +1,8 @@
 # Formularze  
 Chodzi o wypełnianie jakiegoś formularza, jak np. logowanie się gdzieś na stronę, wpisywanie danych do dostawy, wyszukiwanie czegoś na stronie.  
   
-## <form> </form>  
-Formularz tworzy się przy użyciu <form>.  
+## \<form\> \</form\>  
+Formularz tworzy się przy użyciu \<form\>.  
   
 ### action  
 Action to atrybut form, w którym wpisuje się adres URL, do którego dany formularz na być wysłany. To taki "adres dostawy" naszego formularza (danych wpisanych w formularzu).    
@@ -20,7 +20,7 @@ Method to atrybut form, w którym wpisuje się "get" lub "post" (w zależności 
   
   
   
-## <input>  
+## \<input\>  
 Tag input nie ma tagu zamknięcia. Tworzy okienko, w którym można coś wpisać.  
   
 ### type  
@@ -31,8 +31,8 @@ Input przyjmuje atrybut type. Type może mieć różne wartości, np.:
 - month (wybór miesiąca),  
 - number (wybór liczby); można dać też atrybut min, max i step (tak jak w range),  
 - time (wybór godziny),  
-- checkbox (okienko do zaznaczenia) -> zobacz plik "checkboxes,_radio_buttons.md",  
-- range (wartość do wyboru z danego zakresu) -> zobacz plik "range,_text_area".    
+- checkbox (okienko do zaznaczenia) -\> zobacz plik "checkboxes,_radio_buttons.md",  
+- range (wartość do wyboru z danego zakresu) -\> zobacz plik "range,_text_area".    
   
 ### placeholder  
 Input przyjmuje atrybut placeholder. W nim wpisuje się to, co w danym okienku ma być napisane, dopóki nie wpiszemy własnej wartości (np. username):  

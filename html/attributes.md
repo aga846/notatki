@@ -44,10 +44,10 @@ Istnieją 3 atrybuty internacjonalizacji:
   
 ## Dir  
 Wskazuje, w którym kierunku tekst powinien być płynąć - dostępne są 2 wartości: ltr (wartość domyślna, od lewej do prawej) i rtl (dla języków, w których czyta się od prawej strony).  
-Atrybutu dir używa się wewnątrz tagu <html>. Jeśli użyjemy wewnątrz innego tagu, to dir będzie kontrolował kierunek tylko elementu zawartego w tym tagu.  
+Atrybutu dir używa się wewnątrz tagu \<html\>. Jeśli użyjemy wewnątrz innego tagu, to dir będzie kontrolował kierunek tylko elementu zawartego w tym tagu.  
   
 ## Lang  
-Pozwala na wskazanie, jaki jest główny język używany w danym dokumencie. Również umieszcza się go wewnątrz <html>.  
+Pozwala na wskazanie, jaki jest główny język używany w danym dokumencie. Również umieszcza się go wewnątrz \<html\>.  
   
 ## Xml:lang  
 To atrybut lang, ale dla XHTML.  

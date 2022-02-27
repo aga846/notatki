@@ -24,7 +24,7 @@ Każdy input będzie miał swój własny label:
 <label for="l">L:</label>
 <input type="radio" name="size" id="l">
 ```
-W powyższej sytuacji do strony (action w <form>) prześle się "size=on". Żeby przesyłała się także informacja, który radio button został wybrany, należ w inpucie dodać atrybut "value", dla każdego radio buttona inny:  
+W powyższej sytuacji do strony (action w \<form\>) prześle się "size=on". Żeby przesyłała się także informacja, który radio button został wybrany, należ w inpucie dodać atrybut "value", dla każdego radio buttona inny:  
 ```
 <label for="xs">XS:</label>
 <input type="radio" name="size" id="xs" value="xs">

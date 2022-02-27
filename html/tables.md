@@ -1,23 +1,23 @@
-## <table> </table>  
+## \<table\> \</table\>  
 Tworzy tabelę.  
   
-## <td> </td>  
+## \<td\> \</td\>  
 Table data - reprezentuje pojedynczą komórkę. Komórki tworzą się w tym samym rzędzie.  
   
-## <tr> </tr>  
+## \<tr\> \</tr\>  
 Table row - robi nowy rząd.  
   
-## <th> </th>  
-Definiuje header (headers też trzeba ująć w osobny <tr>).  
+## \<th\> \</th\>  
+Definiuje header (headers też trzeba ująć w osobny \<tr\>).  
   
   
-## <thead> </thead>  
+## \<thead\> \</thead\>  
 Wskazuje, gdzie są nagłówki. To nie tylko zrobienie nowego rzędu, ale można użyć także, jeśli jakiś nagłówek ma podnagłówki.  
   
-## <tbody> </tbody>  
+## \<tbody\> \</tbody\>  
 Wskazuje, gdzie znajduje się właściwa tabela.  
   
-## <tfoot> </tfoot>  
+## \<tfoot\> \</tfoot\>  
 Koniec tabeli, ostatni rząd. Używany, gdy np. podaje się sumę wszystkich elementów.  
   
   
