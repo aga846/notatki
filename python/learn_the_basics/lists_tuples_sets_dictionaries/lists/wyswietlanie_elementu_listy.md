@@ -1,4 +1,4 @@
-# Wyświetlanie elementu na liście  
+# Wyświetlanie elementu na liście   
 Do wyświetlania elementu znajdującego się pod danym indeksem na liście służą nawiasy [].  
 ```
 jaskolscy = ["Aga", "Damian", "Dziecko1", "Dziecko2", "Pies"]

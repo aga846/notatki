@@ -1,12 +1,12 @@
-# Co robi funkcja map  
+# Co robi funkcja map   
 Funkcja map() podstawia każdy element z podanego iteratora i (listy, krotki) pod podaną funkcję fn.  
 Składnia:  
-map(fn, i)  
+map(fn, i)   
+   
+Przy map() często używa się lambdy.  
+   
+Wynikiem funkcji map() jest <map object at ...>, dlatego można z jej wyniku zrobić listę.  
   
-Przy map() często używa się lambdy. 
-  
-Wynikiem funkcji map() jest <map object at ...>, dlatego można z jej wyniku zrobić listę. 
-
 ```
 my_list = ["Damian", "Aga", "Blablabla"]
 x = map(len, my_list)

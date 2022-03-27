@@ -2,9 +2,9 @@
 Funkcja len() zwraca długość podanego elementu, np.   
 - listy,  
 - stringa,  
-- słownika.
-
-## Przykład
+- słownika.  
+  
+## Przykład  
 ```
 l = [1, 2, "hey", "hello", 3.24, True]
 print(len(l))   # 6

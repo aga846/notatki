@@ -1,5 +1,5 @@
-# Co robi funkcja insert  
-Funkcja insert() wstawia na listę podany element na podanej pozycji.  
+# Co robi funkcja insert   
+Funkcja insert() wstawia na listę podany element na podanej pozycji.   
 
 ```
 friends = ["Kasia", "Dorota", "Asia", "Ania1"]

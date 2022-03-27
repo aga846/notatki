@@ -2,9 +2,9 @@
 Są 2 sposoby:  
 - za pomocą dwóch "with open",  
 - w obrębie jednego "with open".  
-
+  
 ## Dwa "with open"  
-
+  
 ```
 from csv import reader, writer
 
@@ -41,6 +41,6 @@ with open("fighters.csv") as file:
             csv_wrtier.writerow([s.upper() for s in fighter])
 ```
 
-Drugie "with open" musi być zagnieżdżone w pierwszym, dlatego że "with open" zamyka od razu plik i nie miałabym wtedy dostępu do zmiennej csv_reader.
+Drugie "with open" musi być zagnieżdżone w pierwszym, dlatego że "with open" zamyka od razu plik i nie miałabym wtedy dostępu do zmiennej csv_reader.  
 Nie zrobiłam tu żadnej nowej listy fighters, tylko wykorzystałam csv_reader w forze zawartym w drugim "with open".  
 Csv_reader jest połączony z plikiem który zostałby zamknięty, gdybym nie zagnieździła drugiego "with open" z pierwszym.

@@ -1,9 +1,9 @@
-# Porównanie == oraz "is"
-== porównuje wartości
+# Porównanie == oraz "is"  
+== porównuje wartości.  
 is odnosi się do miejsca w pamięci.  
-
+  
 Na stringach oba powyższe działają tak samo, jednak na listach nie.  
-
+  
 ## Stringi:
 ```
 word = "hello"

@@ -16,7 +16,7 @@ with open("pets.pickle", "rb") as file:
     print(zombie_blue)
     print(zombie_rusty.play())
 ```
-  
+   
 Plik, który utworzyłam (za pomocą "with open", używając trybu write) musi mieć rozszerzenie .pickle. Wtedy zamienia kod, który napisałam, na kod binarny, i w tym pliku "pets.pickle" będzie utworzony obiekt, który zamroziłam dzięki pickle.dump, napisany w kodzie binarnym.  
 Następnie obiekty (blue i rusty), które były napisane jako kod binarny, nazywam jak chcę (tu: "zombie_blue", "zombie_rusty") i je wyświetlam/stosuję metodę z klasy Cat.  
 Do tego nie potrzebuję już teraz pierwszego "with open", mogę go skomentować, bo plik został już utworzony i w nim obiekty zostały już zapisane w kodzie binarnym. Teraz je tylko "odmrażam".  
@@ -26,7 +26,7 @@ Pickle używa się wtedy, kiedy chce się używać danego kodu potem w Pythonie.
   
 ## JSON    
 Używa się tego w celu zamiany kodu napisanego w Pythonie na język JSON (JavaScript Object Notation) lub odwrotnie - z JSON na Python.  
-
+  
 ```
 import json
 
@@ -59,7 +59,7 @@ c = Cat("Charles", "Tabby")
 frozen = jsonpickle.encode(c)
 print(frozen)         # {"py/object": "__main__.Cat", "breed": "Tabby", "name": "Charles"}
 ```
-
+  
 Mogę również zapisać to samo w nowym pliku:  
 
 ```

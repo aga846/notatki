@@ -1,6 +1,6 @@
 # Co robi funkcja append()  
 Funkcja append() dodaje element na końcu listy. Można dodać również listę jako element listy.  
-
+  
 ```
 friends = ["Kasia", "Dorota"]
 friends.append("Asia")

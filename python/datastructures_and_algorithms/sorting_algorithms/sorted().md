@@ -1,9 +1,9 @@
 # Co robi funkcja sorted()  
 Funkcja sorted() zwraca wartości w podanym zbiorze (liście, krotce, słowniku) posortowane alfabetycznie lub od najmniejszego do największego.  
 Kolejność elementów w danym zbiorze pozostaje niezmienna (inaczej niż przy .sort()).  
-
+  
 ## Przykłady   
-### sorted() ze słownikiem:
+### sorted() ze słownikiem:  
 ```
 damian = {"name": "Damian", "age": 26}
 print(sorted(damian.items()))   # [('age', 26), ('name', 'Damian')]
@@ -16,8 +16,8 @@ print(sorted(damian))   # ['age', 'last_name', 'name', 'pet']
 ```
 ^  
 zwrócił tylko klucze, posortowane alfabetycznie.  
-
-### sorted() z listą:
+  
+### sorted() z listą:  
 ```
 aga = ["Aga", "Jask", "Czesc"]
 print(sorted(aga))   # ['Aga', 'Czesc', 'Jask']
@@ -25,18 +25,18 @@ print(sorted(aga))   # ['Aga', 'Czesc', 'Jask']
 numbers = [5, 2, 6, 7, 3]
 print(sorted(numbers))   # [2, 3, 5, 6, 7]
 ```
-
-Ważne!  
+  
+Ważne!   
 Najpierw idą wielkie litery, tj. w powyższym przykładzie z listą - gdyby "czesc" było napisane z małej litery, lista pozostałaby niezmieniona.   
- 
-
-# Sortowanie z podaniem klucza  
-Przy sortowaniu można podać, wg jakiego klucza elementy mają być posortowane:  
+  
+  
+# Sortowanie z podaniem klucza   
+Przy sortowaniu można podać, wg jakiego klucza elementy mają być posortowane:   
 ```
 sorted(damian, key=)  
 ```
-Kluczem f może być inna funkcja, np. len():
-
+Kluczem f może być inna funkcja, np. len():  
+  
 ```
 users = [
     {"username": "Damian", "tweets": ["Hello"]},
@@ -46,11 +46,11 @@ users = [
 sorted(users, key=len)   # [{'username': 'Kasia'}, {'username': 'Damian', 'tweets': ['Hello']},
 {'username': 'Aga', 'age': 26, 'pet': 'no'}]
 ```
-^  
+^   
 zwrócił elementy listy w kolejności od elementu zawierającego najmniej elementów.  
-
-
-Kluczem może być również funkcja lambda:  
+  
+  
+Kluczem może być również funkcja lambda:   
 ```
 sorted(users, key=lambda user: user["username"]) 
 # [{'username': 'Aga', 'age': 26, 'pet': 'no'},
@@ -66,9 +66,9 @@ sorted(users, key=lambda user: len(user["username"]))
 {'username': 'Kasia'},
 {'username': 'Damian', 'tweets': ['Hello']}]
 ```  
-^
-zwrócił elementy listy w kolejności wg długości wartości pod kluczem "username".  
-  
+^  
+zwrócił elementy listy w kolejności wg długości wartości pod kluczem "username".   
+   
   
 albo wielkość liczby:  
 ```
@@ -83,11 +83,11 @@ sorted(songs, key=lambda song: song["playcount"])
 {'title': 'hello', 'playcount': 23},
 {'title': 'baby', 'playcount': 33}]
 ```
-
+  
 ## Sortowanie odwrócone  
 Jako argument w funkcji sorted() można podać również "reverse=True", wtedy zostanie zwrócony dany zbiór posortowany w kolejności:  
-- alfabetycznej  
-- od najmniejszego do największego  
+- alfabetycznej,  
+- od najmniejszego do największego,  
 - wg podanego klucza,  
 ale w odwrotnej kolejności.  
 ```

@@ -1,5 +1,5 @@
 # Dokonywanie zmian w pliku csv przy pomocy DictReader i DictWriter  
-
+  
 ```
 from csv import DictReader, DictWriter
 
@@ -17,9 +17,9 @@ with open("inches_fighters.csv", "w") as file:
     for f in fighters:
         csv_writer.writerow({"Name": f["Name"], "Country": f["Country"], "Height": cm_to_in(f["Height_cm"])})
 ```
-
-Najpierw napisałam funkcję, którą będę stosować do elementów, które w nowym pliku mają zostać zmienione: tutaj napisałam funkcję, która zmienia wysokość podaną w centymetrach na wartość w calach (zwraca wysokość podaną w cm na podaną w calach).  
   
+Najpierw napisałam funkcję, którą będę stosować do elementów, które w nowym pliku mają zostać zmienione: tutaj napisałam funkcję, która zmienia wysokość podaną w centymetrach na wartość w calach (zwraca wysokość podaną w cm na podaną w calach).  
+   
 Następnie otwieram plik do odczytu, przypisuję odczyt pliku do zmiennej csv_reader oraz z tej zmiennej robię listę, która nazywa się "fighters".  
   
 W kolejnym "with open" otwieram nowy plik, w trybie do pisania - "w" (lub tworzę go w ten sposób).  

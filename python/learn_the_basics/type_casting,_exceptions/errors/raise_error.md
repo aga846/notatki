@@ -5,7 +5,7 @@ raise ValueError("VALUE ERROR RAISED!!!")
 ```
 Wtedy po prostu pojawi się błąd ValueError, z wiadomością podaną w nawiasach.  
 Można też użyć po prostu "raise Exception", tylko to trochę zbyt ogólne.    
-
+  
 Bez sensu jednak używać tego w ten sposób. Można za to np. zapobiec podawaniu przez użytkownika innych wartości, niż były zamierzone, np.  
 
 ```

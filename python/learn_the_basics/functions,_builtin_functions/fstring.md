@@ -1,7 +1,7 @@
 # Co robi funkcja f  
 Funkcja f"" formatuje string.  
-W "" można wstawiać wszystko i przeformatuje to na string. Jeśli chce się dodać np. zmienną, listę, słownik itd., należy umieścić je w {}.
-  
+W "" można wstawiać wszystko i przeformatuje to na string. Jeśli chce się dodać np. zmienną, listę, słownik itd., należy umieścić je w {}.  
+   
 ```
 first_date = "03.12.2016"
 aga = "Aga Jaskolska"

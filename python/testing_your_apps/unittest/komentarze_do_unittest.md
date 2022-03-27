@@ -15,5 +15,5 @@ Przy otwieraniu pliku z testami należy napisać:
 ```
 python test_file.py -v
 ```
-
+  
 -v od "verbose".

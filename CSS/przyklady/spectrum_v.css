@@ -1,0 +1,34 @@
+h1 {
+  font-family: "Hurricane", cursive;
+  text-align: center;
+}
+
+table {
+  margin: auto;
+}
+
+td {
+  border: 5px solid white;
+  height: 300px;
+  width: 150px;
+}
+
+#first {
+  background-color: #1d3557; 
+}
+
+#second {
+  background-color: #457b9d;
+}
+
+#third {
+  background-color: #a8dadc;
+}
+
+#fourth {
+  background-color: #f1faee;
+}
+
+#fifth {
+  background-color: #e63946;
+}

@@ -1,10 +1,10 @@
 # Co robi funkcja get  
 Funkcja get() wysyła żądanie do strony - tak jak wpisywanie adresu strony w address bar.  
 Należy rozróżnić get() od post(). W get() chcemy jedynie dostać się do strony. W post() chcemy coś na niej robić, np. wpisać login i hasło.  
-
+  
 Składnia:  
 get(adres_strony)  <- adres musi być poprzedzony https://  
-
+  
 ```
 import requests
 
@@ -13,3 +13,5 @@ response = requests.get(url)
 
 print(f"Your request to {url} came back with status code {response.status_code}")
 ```
+   
+Zmienna "response" to będzie po prostu kod, z jakim się spotkamy (200 - powodzenie).

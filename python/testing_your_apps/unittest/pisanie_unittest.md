@@ -1,13 +1,13 @@
 # Jak pisze się unittesty?   
 Najpierw muszę zaimportować funkcje, które chcę przetestować, z pliku, w którym się znajdują, oraz moduł unittest:  
-
+  
 ```
 import unittest
 from "my_file.py" import function, function2
 ```
-
+  
 Żeby testować za pomocą unittestów, w nowym pliku do testowania tworzę klasę testującą, która dziedziczy z wbudowanej klasy TestCase (zawartej w module unittest, który muszę importować):  
-
+  
 ```
 import unittest
 from "my_file.py" import function, function2
@@ -30,7 +30,7 @@ class MyFileTests(unittest.TestCase):
 ```  
   
 W powyższym przykładzie funkcja eat zwracała jeden z dwóch stringów, zależnie od tego, czy wprowadzone jedzenie jest zdrowe czy nie:  
-
+  
 ```
 def eat(food, is_healty):
     ending = "because YOLO!"
@@ -44,7 +44,7 @@ Potem stosuję metody, które mają za zadanie sprawdzić daną rzecz. W podanym
 - wywołanie funkcji testowanej (tutaj: eat()) od argumentów, które chcę przetestować - tutaj podaję przykładowe jedzenie i boolean, czy jest ono zdrowe,  
 - spodziewany/zamierzony wynik tej funkcji od podanych argumentów.  
   
-Opis innych metod -> unittest/kinds_of_asserts.md.
+Opis innych metod -> unittest/kinds_of_asserts.md.  
   
   
 ## __name__, __main__  

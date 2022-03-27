@@ -8,7 +8,7 @@ Table data - reprezentuje pojedynczą komórkę. Komórki tworzą się w tym sam
 Table row - robi nowy rząd.  
   
 ## \<th\> \</th\>  
-Definiuje header (headers też trzeba ująć w osobny \<tr\>).  
+Definiuje header (headers też trzeba ująć w osobny \<tr\>; tym osobnym tr'em jest thead).  
   
   
 ## \<thead\> \</thead\>  

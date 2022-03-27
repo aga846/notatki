@@ -1,8 +1,8 @@
 # Co to jest slice method  
 Slice method to metoda pozwalająca na zwrócenie kawałka listy lub stringa.  
-[start:stopWYŁĄCZNIE:co_ile_kroków]  
-## Listy
-
+[start:stopWYŁĄCZNIE:co_ile_kroków]   
+## Listy  
+  
 ```
 friends = ["Kasia", "Dorota", "Asia", "AniaB", "AniaZ", "Marta", "Dominika"]
 print(friends[1:5])
@@ -25,9 +25,9 @@ print(friends)
 # ['Kasia', 'MatiP', 'Michał', 'Maciek', 'AniaB', 'AniaZ', 'Marta', 'Dominika
 ']
 ```
-w powyższym przykładzie nastąpiła zamiana elementów na indeksach 1 i 2 (bez 3!) na podane elementy.
-
-## Stringi
+w powyższym przykładzie nastąpiła zamiana elementów na indeksach 1 i 2 (bez 3!) na podane elementy.  
+  
+## Stringi  
 ```
 print("helloiamaga"[2:10:2])
 # loaa

@@ -4,8 +4,8 @@ Status_code to atrybut, który posiada każde zapytanie wysyłane do strony.  S�
 - 3xx, jeśli następuje przekierowanie na inną stronę,  
 - 4xx, jeśli występuje błąd (po naszej stronie),  
 - 5xx, jeśli występuje błąd (po stronie serwera, nie nasza wina).  
-Ilustruje to przykład z pliku "get()":
-
+Ilustruje to przykład z pliku "get()":  
+  
 ```
 import requests
 

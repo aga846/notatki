@@ -17,12 +17,12 @@ class MyFileTests(unittest.TestCase):
         "I'm eating pizza, because YOLO!")
 ```
   
-W powyższym przykładzie funkcja eat zwraca jeden z dwóch stringów, zależnie od tego, czy wprowadzone jedzenie jest zdrowe czy nie.
+W powyższym przykładzie funkcja eat zwraca jeden z dwóch stringów, zależnie od tego, czy wprowadzone jedzenie jest zdrowe czy nie.  
   
 W assertEqual jako argumenty podaję:   
 - wywołanie funkcji testowanej (tutaj: eat()) od argumentów, które chcę przetestować - tutaj podaję przykładowe jedzenie i boolean, czy jest ono zdrowe,  
 - spodziewany/zamierzony wynik tej funkcji od podanych argumentów.  
-  
+   
   
 ## assertNotEqual(x, y)  
 assertNotEqual sprawdza, czy funkcja od podanego argumentu/argumentów nie jest równa podanemu wyrażeniu:  
@@ -59,17 +59,17 @@ W assertTrue i assertFalse jako argumenty podaję:
 - opcjonalnie: wiadomość, która się wyświetli, jeśli wynik podanej funkcji od podanego argumentu nie będzie True (przy assertTrue) lub Falsey (przy assertFalse).  
   
 To ważne, że metoda assertFalse sprawdza nie tylko False, ale też inne Falsey, dlatego, że gdyby w powyższym przykładzie funkcja is_funny() wyglądała tak:  
-
+  
 ```
 def is_funny(person):
     if person != "tim": return True
 ```
 to jej wynikiem dla "tim" byłoby "None", a nie "False".  
 Dlatego, jeśli chcemy sprawdzić, czy wynikiem funkcji jest konkretnie False, a nie Falsey, lepiej użyć metody assertEqual i jako drugi argument podać False.  
-
+  
 ## assertIsNone(x) i assertIsNotNone(x)  
 assertNone sprawdza, czy wynik funkcji od podanego argumentu/argumentów jest None, a assertIsNotNone sprawdza, czy wynik funkcji od podanego argumentu/argumentów nie jest None.  
-
+  
 ```
 def is_funny(person):
     if person != "tim": return True
@@ -98,11 +98,11 @@ class MyFileTests(unittest.TestCase):
     def test_laugh(self):
         self.assertNotIn(laugh(), ("pfff", "grrrr", "wtf"))
 ```
-
+  
 ## assertRaises(error)  
 assertRaises sprawdza, czy błąd został wywołany w podanym przypadku.  
-NALEŻY UŻYĆ INNEJ SKŁADNI:
-
+NALEŻY UŻYĆ INNEJ SKŁADNI:  
+  
 ```
 def eat(food, is_healty):
     if not isinstance(is_healthy, bool):

@@ -16,7 +16,7 @@ for x in enumerate(l):
 (6, 4)
 ```
 
-W enumerate można iterować również przez indeks i wartość, tj.
+W enumerate można iterować również przez indeks i wartość, tj.  
 
 ```
 l = [3, 4, 5, 4, 2, 7, 4]

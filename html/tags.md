@@ -5,7 +5,9 @@ Tag używany po to, żeby przeglądarka zrozumiała, która wersja HTMLa jest u�
 Cała zawartość dokumentu (pliku) jest między \<html\> a \</html\>, łącznie z \<head\>.  
   
 ## \<head\> \</head\>  
-To tytuł dokumentu/strony. Jeśli otworzę stronę, to to, co jest zawarte pomiędzy \<head\> i \</head\>, będzie widoczne w tytule strony (jak mam otwarte kilka kart, to widzę tytuł każej z nich).  
+To tytuł dokumentu/strony. Jeśli otworzę stronę, to to, co jest zawarte pomiędzy \<head\> i \</head\>, będzie widoczne w tytule strony (jak mam otwarte kilka kart, to widzę tytuł każej z nich). Zazwyczaj w tym tagu zamieszcza się tagi \<title\> \</title\> i pomiędzy nimi wpisuje tytuł.    
+  
+W tych tagach zamieszcza się także metadane (patrz plik: "meta_tags.md"), w tym także połączenie z plikami CSS i JS.  
   
 ## \<body\> \</body\>  
 Pomiędzy \<body\> a \</body\> znajduje się wszystko, co będzie wyświetlone na stronie.  
@@ -32,13 +34,13 @@ Dzięki \<pre\>, napisany tekst będzie wyświetlał się w takim formatowaniu, 
 Dzięki &nbsp; (nonbreaking space), dane słowa zostaną przedzielone twardą spacją (słowa te będą utrzymane razem, nie zrobi się między nimi enter).  
   
 ## \<i\> \</i\>  
-Tekst zawarty między \<i\> a \</i\> będzie napisany kursywą.  
+Tekst zawarty między \<i\> a \</i\> będzie napisany kursywą. To stary sposób pisania kursywą.    
   
 ## \<u\> \</u\>  
 Tekst zawarty między \<u\> a \</u\> będzie podkreślony. 
   
-## \<b\> \</B\>
-Tekst zawarty między \<b\> a \</b\> będzie pogrubiony.  
+## \<b\> \</b\>
+Tekst zawarty między \<b\> a \</b\> będzie pogrubiony. To stary sposób pogrubiania tekstu.  
   
 ## \<strike\> \</strike\>  
 Tekst zawarty między \<strike\> a \</strike\> będzie przekreślony linią.  
@@ -95,13 +97,13 @@ Span służy do grupowania elementów wewnątrz linijki. Jeśli mam część zda
 Przyda się bardziej w połączeniu z CSS.
   
 ## \<em\> \</em\>  
-Em - emphasized text - tekst będzie pokreślony (zazwyczaj napisany kursywą).  
+Em - emphasized text - tekst będzie pokreślony (zazwyczaj napisany kursywą). To nowy sposób na napisanie tekstu kursywą.    
   
 ## \<mark\> \</mark\>  
 Mark służy do zaznaczenia tekstu kolorem żółtym (na żółtym tle, tak jakbym pisakiem podkreśliła).  
 
 ## \<strong\> \</strong\>  
-Napisanie "silnym naciskiem" - będzie pogrubione (różnica między bold: strong to stan logiczny, a bold to stan fizyczny).  
+Napisanie "silnym naciskiem" - będzie pogrubione (różnica między bold: strong to stan logiczny, a bold to stan fizyczny oraz bold to stary sposób).  
   
 ## \<abbr\> \</abbr\>  
 Reprezentuje skrót. Jeśli jest atrybut title, może stanowić rozwinięcie lub opis skrótu (ale nic więcej).  

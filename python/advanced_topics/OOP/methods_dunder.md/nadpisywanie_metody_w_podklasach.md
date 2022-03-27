@@ -1,6 +1,6 @@
 # Definiowanie metody o takiej samej nazwie w różnych klasach lub w podklasach (nadpisywanie)  
 W podklasach mogę definiować metody, które mają tą samą nazwę, co inne metody w klasie-rodzicu lub innych podklasach, ale robią coś innego.  
-
+  
 ```
 class Animal():
     def speak(self):

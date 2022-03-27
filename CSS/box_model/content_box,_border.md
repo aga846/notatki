@@ -30,3 +30,10 @@ Można też ustawiać konkretne rogi indywidualnie:
 ```
 border-top-left-radius: 300px
 ```
+  
+## Box-shadow  
+Robi cień.  
+```
+box-shadow: 12px 12px 2px 1px red
+```
+Pierwsza wartość odnosi się do osi x, druga do osi y, trzecia to promień rozmycia, czwarta to promień rozprzestrzeniania, piąta to kolor.

@@ -1,11 +1,11 @@
 Dzięki dekoratorom można wiele zrobić z argumentami funkcji "owijanej", np.  
 - zapewnić, że nie zostaną wprowadzone określone typy zmiennych jako argumenty do funkcji owijanej,  
 - zapewnić, że konkretny argument funkcji owijanej będzie jakimś wybranym przez nas (np. że pierwszym argumentem w funkcji owijanej zawsze będzie "pomidor"),  
-- zmienić typ argumentu funkcji owijanej (np. zmienić string na integer).  
-
-## Zapewnienie, że nie będzie określonych typów zmiennych jako argumenty  
-Tutaj: nie będzie żadnych keyword arguments w funkcji owijanej.  
-
+- zmienić typ argumentu funkcji owijanej (np. zmienić string na integer).   
+  
+## Zapewnienie, że nie będzie określonych typów zmiennych jako argumenty   
+Tutaj: nie będzie żadnych keyword arguments w funkcji owijanej.    
+  
 ```
 from functools import wraps
 
@@ -33,7 +33,7 @@ print(f_owijana("Aga", "Damian", "Wiktoria", "Radek"))
 
 ## Zapewnienie, że któryś argument będzie jakiś  
 Tutaj: pierwszy argument musi być argumentem (słowem) podanym przez nas jako argument w funkcji owijającej (tu: ensure_first_arg_is).  
-
+  
 ```
 from functools import wraps
 
@@ -56,8 +56,8 @@ print(fav_foods("bataty", "pierogi"))    # First arg must be pomidor!
 ```
 
 Funkcja ensure_first_arg_is akceptuje 1 argument, który będziemy sprawdzać (on wyznacza, jak ma brzmieć pierwszy argument funkcji fav_foods). Dopiero funkcja inner jest tą funkcją, która przyjmuje jako argument funkcję owijaną i dopiero w inner jest wrapper, który rzeczywiście sprawdza to, co chcemy (czy pierwszy argument w args funkcji fav_foods jest równy argumentowi podanemu funkcji ensure_first_arg_is).  
-
-## Zmiana typu argumentu dzięki dekoratorowi  
+  
+## Zmiana typu argumentu dzięki dekoratorowi   
 
 ```
 def enforce(*types):
@@ -83,5 +83,5 @@ print(repeat_msg("Miśku", "3"))
 ```
 Funkcja wrapper najpierw tworzy nową, pustą listę dla nowych argumentów, które zostaną podane jako argumenty do funkcji repeat_msg, która będzie za chwilę egzekwowana we wrapperze.  
 Dla każdej pary: a - argument funkcji repeat_msg i t - typ podan w funkcji enforce, zepnij je w krotki (argument, typ) i dodaj do nowo utworzonej listy newargs argument (a) zamieniony na typ (t) -> stąd mamy t(a).  
-Pary tworzą się przez zip() tak, że spina się pierwszy argument funkcji repeat_msg (msg) z pierwszym argumentem funkcji enforce (str) i drugi argument funkcji repeat_msg (times) z drugim argumentem funkcji enforce (int), stąd dodajemy do listy msg zamienione na string i times zamienione na integer.  
+Pary tworzą się przez zip() tak, że spina się pierwszy argument funkcji repeat_msg (msg) z pierwszym argumentem funkcji enforce (str) i drugi argument funkcji repeat_msg (times) z drugim argumentem funkcji enforce (int), stąd dodajemy do listy msg zamienione na string i times zamienione na integer.   
 Po dodaniu na listę wszystkich argumentów zamienionych na typy (czyli np. "("message", 3)"), wywołujemy funkcję repeat_msg od listy nowych args - potrzebujemy tu * przed newargs, bo jest to lista, którą musimy rozpakować.

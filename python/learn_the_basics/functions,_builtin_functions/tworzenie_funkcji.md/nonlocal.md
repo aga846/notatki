@@ -3,9 +3,9 @@ Nonlocal to znaczące słowo w pythonie.
 Jeśli w funkcji wewnętrznej chcę zrobić coś ze zmienną, która została zdefiniowana w funkcji zewnętrznej, a nie do globalnej zmiennej ani do lokalnej zmiennej, potrzebuję użyć słowa "nonlocal". W innym przypadku zmienna będzie zmienną lokalną, do której możliwe odniesienie się będzie tylko w tej funkcji wewnętrznej.  
 Za pomocą słowa "nonlocal" dajemy znać pythonowi o tym, że dana zmienna jest zdefiniowana w funkcji zewnętrznej (funkcji "matce").  
 Nie wystarczy także użyć słowa "nonlocal" przed zmienną podczas robienia coś z tą zmienną. Trzeba ją najpierw "zimportować".  
-
-W pierwszym przykładzie nie odnoszę się do zmiennej z funkcji matki (nonlocal), tylko tworzę nową zmienną, tylko na potrzeby funkcji f_inside: 
-
+  
+W pierwszym przykładzie nie odnoszę się do zmiennej z funkcji matki (nonlocal), tylko tworzę nową zmienną, tylko na potrzeby funkcji f_inside:  
+  
 ```
 total = 0
 
@@ -30,8 +30,8 @@ print(total)
 5     <- linijka 12 kodu; printuje lokalne (ale z f_outside) total
 0     <- linijka 15 kodu; printuje globalne total.
 ```
-
-Poniżej taki sam przykład, ale z zaznaczeniem w funkcji wewnętrznej, że chodzi mi o total z funkcji "matki":
+  
+Poniżej taki sam przykład, ale z zaznaczeniem w funkcji wewnętrznej, że chodzi mi o total z funkcji "matki":  
 ```
 total = 0
 
@@ -57,6 +57,6 @@ print(total)
 11    <- total z funkcji f_outside zostało zmienione w f_inside najpierw poprzez zmianę na 10, potem przez dodanie do niego 1, dlatego jest równe 11.
 0
 ```
-
+  
 ## Ważne  
 Nie mogę w funkcji wewnętrznej najpierw zdefiniować zmiennej lokalnej, a potem odnieść się do zmiennej nonlocal.

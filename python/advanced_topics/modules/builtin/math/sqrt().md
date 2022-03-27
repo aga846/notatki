@@ -1,6 +1,6 @@
 # Co robi funkcja sqrt()  
 Funkcja sqrt zwraca pierwiastek w podanej liczby jako liczbę float.   
-
+  
 ```
 from math import sqrt
 

@@ -1,6 +1,6 @@
 # Co robi funkcja time()  
 Funkcja time() zwraca aktualny czas.  
-
+  
 ```
 import time
 start_time = time.time()

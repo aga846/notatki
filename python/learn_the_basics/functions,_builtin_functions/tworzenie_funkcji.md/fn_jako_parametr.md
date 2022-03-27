@@ -1,5 +1,5 @@
 Funkcja może być parametrem w innej funkcji.  
-
+  
 ```
 def power(x, y):
     return x ** y
@@ -12,7 +12,7 @@ output = sum_of_numbers_and_its_power(2, 4, power)
 print(output)     # 18
 ```
 W powyższym przykładzie funkcja power jest podana jako domyślna w funkcji sum_of_number_and_its_power, dlatego w ogóle nie trzeba jej podawać jako argument.  
-Jeśli chcę podać inną funkcję, mogę to zrobić, np.:
+Jeśli chcę podać inną funkcję, mogę to zrobić, np.:  
 
 ```
 import math

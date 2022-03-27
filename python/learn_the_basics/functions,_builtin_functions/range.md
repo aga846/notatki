@@ -1,5 +1,5 @@
-# Co robi funkcja range()  
-Funkcja range reprezentuje podany ciąg cyfr.  
+# Co robi funkcja range()   
+Funkcja range reprezentuje podany ciąg cyfr.   
 
 ```
 range(7)          # od 0 do 7 WYŁĄCZNIE (0, 1, 2, 3, 4, 5, 6)

@@ -38,7 +38,8 @@ Input przyjmuje atrybut type. Type może mieć różne wartości, np.:
 Input przyjmuje atrybut placeholder. W nim wpisuje się to, co w danym okienku ma być napisane, dopóki nie wpiszemy własnej wartości (np. username):  
 ```
 <input type="text" placeholder="username">
-```
+```  
+Zamiast placeholder można dać atrybut "value", wtedy, jeśli użytkownik nie wpisze nic w danym okienku, to wartość atrybutu "value" będzie przesłana.  
 Nie działa dla wszystkich typów. Działa np. dla password, number.  
   
 ### name  

@@ -1,4 +1,4 @@
-Istotne są tutaj właściwości elementów, takie jak inline (niektóre elementy nie tworzą dla siebie kolejnej linijki, jak np. <span>) i block (inne elementy tworzą dla siebie całą linię, np. <h1>).  
+Istotne są tutaj właściwości elementów, takie jak inline (niektóre elementy nie tworzą dla siebie kolejnej linijki, jak np. \<span\>) i block (inne elementy tworzą dla siebie całą linię, np. \<h1\>).  
   
 Dzięki display można zmieniać te właściwości:  
 ```

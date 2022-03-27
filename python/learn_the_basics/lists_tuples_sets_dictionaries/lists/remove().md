@@ -1,6 +1,6 @@
 # Co robi funkcja remove  
 Funkcja remove() usuwa pierwszy znaleziony element o podanej nazwie/wartości.  
-
+  
 ```
 friends = ["Kasia", "Dorota", "Ania", "Asia", "Ania"]
 friends.remove("Ania")
