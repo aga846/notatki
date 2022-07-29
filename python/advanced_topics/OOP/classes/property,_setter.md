@@ -32,7 +32,7 @@ def age(self):
 ```
   
 Ustalamy tutaj property, który nazywa się "age" i zwracamy prywatny atrybut.  
-Kiedy odwołujemy się do neigo, nie musimy wywoływać tej metody/funkcji, piszą nawiasy - do property można dostać się tak, jak do zwykłego atrybutu, tak, jakby to był atrybut:  
+Kiedy odwołujemy się do niego, nie musimy wywoływać tej metody/funkcji, pisząc nawiasy - do property można dostać się tak, jak do zwykłego atrybutu, tak, jakby to był atrybut:  
   
 ```
 print(jane.age)

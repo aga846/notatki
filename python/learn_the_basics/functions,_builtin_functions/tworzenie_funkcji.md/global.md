@@ -13,7 +13,7 @@ def adding_to_x(x):
     x += total
     return x
 
-print(power(2))    # 3
+print(adding_to_x(2))    # 3
 ```   
 Ważne jest również to, że jeśli robimy coś z globalną zmienną wewnątrz funkcji, ona zmienia się globalnie. Gdybyśmy w powyższym przykładzie wywołali print(total), zwróciłoby 1, a nie 0.  
   

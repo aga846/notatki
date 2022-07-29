@@ -21,5 +21,5 @@ def colorize(text, color):
     print(f"Printed {text} in {color}")
     
 colorize("hello", "yellow")    # Printed hello in yellow
-colorize("3, "cyan")           # TypeError: text must be a string!
+colorize(3, "cyan")           # TypeError: text must be a string!
 ```

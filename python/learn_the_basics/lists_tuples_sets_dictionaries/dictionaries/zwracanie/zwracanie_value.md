@@ -8,6 +8,7 @@ print(user["name"])     # Damian
 ```
 for value in user.values():
     print(value)
+    
 # Damian
   Jaskolski
   26

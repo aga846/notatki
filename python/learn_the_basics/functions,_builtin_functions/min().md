@@ -1,5 +1,5 @@
 # Do czego służy funkcja min    
-Funkcja max zwraca najmniejszy z podanych elementów - zarówno liczb, jak i liter i wyrazów.  
+Funkcja min zwraca najmniejszy z podanych elementów - zarówno liczb, jak i liter i wyrazów.  
 Składnia:  
 min(x, y, z)  
 Ważne - elementy mogą być podane jako pojedyncze elementy, ale również na krotce czy liście.  
@@ -13,7 +13,7 @@ print(min("a", "D", "e", "F"))                  # D
 
 print(min("Damian", "Aga", "Kasia", "Mati"))    # Aga
 ```
-Odnośnie liter - w pierwszej kolejności są litery wielkie, potem małe, dlatego w przykładzie nr 3 została zwrócona litera "e", a nie "F".  
+Odnośnie liter - w pierwszej kolejności są litery wielkie, potem małe, dlatego w przykładzie nr 3 została zwrócona litera "D", a nie "F".  
   
 ## Podawanie klucza w funkcji min    
 Do funkcji min() oprócz samego zbioru elementów można podać również klucz, wg którego funkcja będzie zwracać wartość minimalną.  

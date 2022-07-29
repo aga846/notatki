@@ -62,4 +62,22 @@ Można, zamiast najpierw kompilowania i przypisywania skomilowanego regexa do zm
 re.search(r"\d{3} \d{3}-\d{4}", "Call me at 415 555-4242")
 ```
 Można również na koniec dodać jeszcze ".group()".  
-Różnicą jest to, że jeśli będziemy używać później naszego wzoru (regexa), to w omawianym przypadku nie mam żadnej zmiennej, której można łatwo użyć.
+Różnicą jest to, że jeśli będziemy używać później naszego wzoru (regexa), to w omawianym przypadku nie mam żadnej zmiennej, której można łatwo użyć.  
+  
+## Metoda start()  
+Wynikiem metody start() jest wskazanie indeksu stringa, od którego zaczyna się wyrażenie, którego szukam:  
+```
+text = "I am term1"
+metch = re.search("term1", text)
+print(match.start())        # 6
+```
+  
+## Metoda split()  
+Metoda split() rozdziela podany string w miejscu, gdzie znajdzie szukane wyrażenie.Rozdzielony string zwraca jako listę:  
+```
+split_term = "@"
+email = "user@gmail.com"
+match = re.split(split_term, email)
+print(match)              # ["user", "hmail.com"]
+```
+  

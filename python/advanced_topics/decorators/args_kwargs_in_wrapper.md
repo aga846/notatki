@@ -16,6 +16,6 @@ def order(main, side):
     return f"Hi, I would like to order {main} with {side}"
     
 
-print(greet("damian"))            # DAMIAN
+print(greet("damian"))            # HI, I'M DAMIAN
 print(order("burger", "fries"))   # HI, I WOULD LIKE TO ORDER BURGER WITH FIRES
 ```

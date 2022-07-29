@@ -7,7 +7,7 @@ Na stringach oba powyższe działają tak samo, jednak na listach nie.
 ## Stringi:
 ```
 word = "hello"
-word2 = "hello2"
+word2 = "hello"
 print(word == word2)    # True
 print(word is word2)    # True
 ```

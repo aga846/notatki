@@ -9,7 +9,7 @@ W pierwszym przykładzie nie odnoszę się do zmiennej z funkcji matki (nonlocal
 ```
 total = 0
 
-def F_outside():
+def f_outside():
     total = 5
 
     def f_inside():
@@ -60,3 +60,29 @@ print(total)
   
 ## Ważne  
 Nie mogę w funkcji wewnętrznej najpierw zdefiniować zmiennej lokalnej, a potem odnieść się do zmiennej nonlocal.
+  
+## Locals  
+Funkcja locals() tworzy słownik, z keys jako nazwami wszystkich zmiennych lokalnych, a values jako przypisanymi do nich wartościami.  
+```
+s = "GLOBAL VARIABLE"
+
+def func():
+    mylocal = 10
+    print(locals())
+    
+func()          # {"mylocal": 10}
+```
+  
+## Globals  
+Funkcja globals() tworzy słownik, z keys jako nazwami wszystkich zmiennych globalnych, a values jako przypisanymi do nich wartościami.  
+To nie będą tylko zdefiniowane przeze mnie zmienne, ale także pewne wbudowane rzeczy.  
+Żeby dostać się do konkretnej zmiennej, mogę użyć [], w których wstawię nazwę tej zmiennej:  
+```
+s = "GLOBAL VARIABLE"
+
+def func():
+    mylocal = 10
+    print(globals()["s"])
+    
+func()          # GLOBAL VARIALBE
+```

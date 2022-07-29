@@ -12,7 +12,7 @@ def say_hello():
     
 print(say_hello.__doc__)
 
-# A function that returns say_hello
+# A function that returns hello
 ```  
   
 Nie dawać spacji po ani przed """ """, bo wtedy wyświetla z niepotrzebnymi spacjami.

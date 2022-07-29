@@ -5,7 +5,7 @@ Funkcja zip() łączy:
 itd.  
 Może być podane więcej niż tylko 2 listy.  
 Pary (ciągi) elementów są zwracane w krotkach, jednak jest to <zip object at ...>.   
-Jeśli z wyniku funkcji zip() chcemy zzrobić listę lub słownik, należy użyć funkcji list() lub dict(), przy czym słownik można zrobić tylko wtedy, jeśli spinamy ze sobą dwie listy, nie więcej.  
+Jeśli z wyniku funkcji zip() chcemy zrobić listę lub słownik, należy użyć funkcji list() lub dict(), przy czym słownik można zrobić tylko wtedy, jeśli spinamy ze sobą dwie listy, nie więcej.  
 Podane listy muszą być takiej samej długości. Jeśli nie są - zip() spina razem tylko tyle elementów, ile jest na krótszej liście.  
    
 ```
@@ -16,7 +16,7 @@ list3 = ["A", "B", "C"]
 print(list(zip(list1, list2, list3)))
 # [(3, 15, 'A'), (4, 18, 'B'), (2, 2, 'C')]
 
-print(list(zip(list1, list2)))    {3: 15, 4: 18, 2: 2}
+print(dict(zip(list1, list2)))    {3: 15, 4: 18, 2: 2}
 ```
 
 ## Rozpakowanie listy do funkcji zip  

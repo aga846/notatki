@@ -1,7 +1,7 @@
 # KONIECZNE ZAIMPORTOWANIE MODUŁU MATH  
   
-## Co robi funkcja sum  
-Funkcja sum zwraca sumę wszystkich wartości z listy, z tym że stosuje się dla liczb float.  
+## Co robi funkcja fsum  
+Funkcja fsum zwraca sumę wszystkich wartości z listy, z tym że stosuje się dla liczb float.  
 W przeciwieństwie do sum, nie przyjmuje argumentu "start".  
   
 ```

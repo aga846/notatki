@@ -22,6 +22,15 @@ Greeting równa się wynikowi funkcji be_polite od argumentu greet, który też 
 Następnie został wywołany greeting(), dlatego zaczęło się egzekwowanie funkcji be_polite. Funkcja ta ma w sobie zdefiniowaną funkcje wrapper, którą egzekwuje w linijce 6 kodu.  
 Tym samym teraz została wywołana funkcja wrapper, która printuje pierwsze zdanie, potem wywołuje funkcję greet, która printuje swoje zdanie, a potem printuje drugie zdanie.  
   
+Inny przykład:  
+```
+def hello(name="Damian"):
+    return "Hello" + name
+    
+  mynewgreet = hello    <-- ważne, bez nawiasów!
+  print(mynewgreet()) # wynik funkcji hello() - "Hello Damian"
+```  
+   
 ## Przykład owijania się z dekoratorem    
   
 ```

@@ -1,5 +1,5 @@
 # Co robi metoda pop  
-Metoda pop() usuwa podany element z listy. Domyślnym argumentem jest -1, czyli ostatni element.  
+Metoda pop() usuwa z listy element na podanym indeksie. Domyślnym argumentem jest -1, czyli ostatni element.  
   
 ```
 nums = [1, 2, 3, 4]

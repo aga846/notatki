@@ -2,7 +2,7 @@
 Dictionary comprehension służy do tworzenia nowego słownika z podanego słownika lub samych tylko wartości, pozwalając na dowolną zmanę każdego key i value (i te zmienione key i values dodaje do nowego słownika).  
   
 ## Przykłady   
-### 1. Tworzenie słownika za słownika   
+### 1. Tworzenie słownika ze słownika   
 Tworzy słownik składający się z takich samych keys, jak podany słownik, z values podniesionymi do kwadratu.  
   
 ```

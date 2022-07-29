@@ -1,6 +1,6 @@
 # Co robi funkcja split()  
 Funkcja split zamienia string na listę, tj. zamienia zawarte w stringu elementy na listę.  
-Elementami listy będą elementy ze stringa (litery lub wyrazy), które były rozdzielone podanym znakie/wartością.  
+Elementami listy będą elementy ze stringa (litery lub wyrazy), które były rozdzielone podanym znakiem/wartością.  
   
 ```
 word1 = "Cześć jestem Aga i bardzo Cię kocham"
@@ -12,8 +12,8 @@ print(word1.split())
 print(word1.split(" "))
 # ['Cześć', 'jestem', 'Aga', 'i', 'bardzo', 'Cię', 'kocham']
 print(word2.split(", "))
-# ['Cześć", "jestem Aga', 'bardzo Cię kocham']
+# ['Cześć", " jestem Aga', ' bardzo Cię kocham']
 print(word3.split("e"))
 # ["Cz", "ść, j", "st", "m Aga"]
 
-``
+```
