@@ -32,8 +32,8 @@ def index(request):
 ```
 Czyli tworzymy słownik, który za key ma zmienną z pliku HTML, podaną w tagu template, a za value to, co chcemy wyświetlić na stronie.  
 Zwracamy wynik funkcji render, która za argumenty przyjmuje:  
-- request = template, którego chcemy użyć,  
+- request,  
 - plik HTML (razem ze wskazaniem, że znajduje się w folderze first_app),  
-- context równy słownikowi, który stworzyliśmy wyżej.  
+- context równy słownikowi, który stworzyliśmy wyżej. Jest potrzebny po to, żeby plikowi HTML zapewnić informacje, które chcę, żeby wyświetlił - np. wszystkie zmienne, do których chcę, żeby miał dostęp.  
   
 Należy jeszcze dodać ścieżkę do adresu strony - patrz: aplikacje_a_projekt: Mapowanie przy pomocy include().

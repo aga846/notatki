@@ -6,12 +6,12 @@ Django operuje na paradygmacie Models-Templates-Views, czyli MTV. Chodzi o to, j
 4. Edytujemy template, żeby był gotowy na zaakceptowanie i wyświetlenie danych z modelu  
 5. Mapujemy URL do view.  
   
-Ad 1  
+## Ad 1  
 ```
 from first_app.models import Topic, Webpage, AccessRecord
 ```
   
-Ad 2  
+## Ad 2  
 ```
 def index(request):
     webpages_list = AccessRecord.objects.order_by("date")
@@ -22,7 +22,7 @@ Robię listę webpages_list, w której znajdują się obiekty klasy AccessRecord
 Robię słownik date_dict, w którym key będzie "access_records", a value lista webpages_list (value to to, co chcemy wyświetlić na stronie).  
 Potem renderuję request, plik HTML, którego chcę użyć oraz stworzony słownik.  
   
-Ad 3, Ad 4   
+## Ad 3, Ad 4   
 To edytowanie pliku HTML.  
 Wstawiam w nim div, a w nim:  
 ```

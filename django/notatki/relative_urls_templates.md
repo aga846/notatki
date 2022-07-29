@@ -21,11 +21,11 @@ name="thanku" jest w pliku urls.py.
 Kliknięcie na "Thanks" zabierze nas do tego konkretnego view.  
   
 ### Zrobienie wszystkiego w pliku urls.py - najlepsza metoda  
-Dodaję w tym pliku zmienną "app_name" i ustawiam ją na string, który jest nazwą mojej aplikacji.  
+Dodaję w tym pliku zmienną "app_name" i ustawiam ją na string, który jest nazwą mojej aplikacji. Jest to mi potrzebne do tego, że jak w HTMLu będę odnosić się do jakiegoś pliku po nazwie tej aplikacji, to Django będzie wiedział, że to jest ta aplikacja (bo tam normalnie zmienną jest app_name).   
 ```
 app_name = 'first_app'
 ```
-następnie wewnątrz tagu \<a\> w pliku HTML piszę 'nazwa aplikacji: nazwa view'.
+następnie wewnątrz tagu \<a\> w pliku HTML piszę 'nazwa aplikacji: nazwa view'. Ta nazwa view to jest to, co ustawiłam w pliku urls.py pod 'name' przy przywoływaniu danego view i ustawiania przejścia do niego przy udaniu się pod konkretny adres strony.  
 ```
 <a href="{% url 'first_app:thankyou' %}">Thanks</a>
 ```  
@@ -60,7 +60,7 @@ Plik bazowy:
     {% endblock %}
   </body>
 ```
-Wszystko, co jest pomiędzy "block body_block" oraz "endblock", będzie zawarte tylko w pliku bazowym.  
+Wszystko, co jest pomiędzy "block body_block" oraz "endblock", to będzie to, co będzie właściwe tylko dla danego pliku, który będzie dziedziczył z pliku bazowego.  
   
 Plik dziedziczący:  
 ```

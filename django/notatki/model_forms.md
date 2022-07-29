@@ -1,7 +1,7 @@
 # O co chodzi z model forms?  
 Chodzi o to, żeby nie tylko wyświetlać dane z formularza w konsoli, ale zachowywać je jako model, np. mamy użytkownika, który rejestruje się na stronę i chcemy zapisać jego informacje do modelu lub ktoś pisze komentarz, który chcemy żeby zawsze się wyświetlał na stronie.  
 Trzeba skorzystać (dziedziczyć) z forms.ModelForm w pliku forms.py. Ta klasa pozwoli na stworzenie formularza z istniejącego już modelu.  
-Następnie dodajemy klasę inline "Meta", która zapewnia informacje, łącząć model z formularzem (klasa inline - to klasa wewnątrz klasy).  
+Następnie dodajemy klasę inline "Meta", która zapewnia informacje, łącząc model z formularzem (klasa inline - to klasa wewnątrz klasy).  
   
 Jestem w pliku forms.py.
 Muszę zimportować forms z django.  

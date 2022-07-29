@@ -5,10 +5,11 @@ Używamy modeli, żeby włączyć bazę danych do projektu.
 Django korzysta z SQLite (oraz innych rodzajów/engine'ów SQL).  
   
 W pliku settings.py mogę edytować parametr ENGINE używany pod DATABASES.  
-Żeby stworzyć model, używamy struktury klas wewnątrz pliku models.py danej aplikacji. Klasa będzie dziedziczyć z wbudowanej w Django klasy django.db.models.Mobel.  
+Żeby stworzyć model, używamy struktury klas wewnątrz pliku models.py danej aplikacji. Klasa będzie dziedziczyć z wbudowanej w Django klasy django.db.models.Model.  
 Każdy atrybut tej klasy (dziedziczącej) będzie reprezentować konkretne pole (field) - tak jak kolumna w SQLu.  
-primary key = unikalny identyfikator pod każdy rząd w tabeli  
+primary key = unikalny identyfikator pod każdy rząd w tabeli - kolumna z konkretnym indentyfikatorem (numerem), której nie tworzę; zawsze jest pierwsza w każdej tabeli; to ID każdego obiektu     
 foreign key = wskazuje na to, że dana kolumna "zbiega się" z primary key innej tabeli.  
+Fieldy ForeignKey oraz OneToOneField wymagają dodatkowo argumentu on_delete=models.CASCADE.  
   
 ## Tworzenie klas w pliku models.py  
 Tworzę klasę, która dziedziczy z klasy models.Model. Każda klasa to model. Każdy model jest jak tabela.  
@@ -26,7 +27,7 @@ class Webpage(models.Model):
     def __str__(self):
       return self.name   <- przy printowaniu webpage pokaże się name
 ```  
-  
+Rodzaje pól są opisane w dokumentacji. Oprócz CharField, np. EmailField, PositiveIntegerField.    
 Po utworzeniu modeli będziemy migrować bazę danych.  
   
 ## Migracja bazy danych  

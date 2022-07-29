@@ -52,7 +52,12 @@ path('', views.index, name='index')]
 ```
 
 Pierwszy argument to ścieżka - to, co znajduje się po głównym adresie (po http://127.0.0.1:8000/).  
-  
+W ścieżce mogę dawać różne zmienne poprzez użycie nawiasów <>, w którym określam typ zmiennej oraz jej nazwę, np.  
+```
+path("<str:name>", views.greet, name=greet)
+```  
+Powyższe oznacza, że zmienną (string) "name" dostarczę jako parametr funkcji greet znajdującej się w views.py - która np. zwraca "HttpResponse(f"Hello {name.capitalize()}!")".  
+    
 Ogólnie lepiej jest utrzymywać główny plik urls.py (ten stworzony automatycznie przy tworzeniu projektu) jak najczystszym; w tym celu najlepiej zawierać potrzebne URL w samych aplikacjach - tam stworzyć plik urls.py i używać funkcji include().  
   
 #### Mapowanie przy pomocy include()  
